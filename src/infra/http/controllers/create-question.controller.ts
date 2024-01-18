@@ -1,10 +1,10 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
 import { Body, Controller, Post, UseGuards } from '@nestjs/common'
 import { AuthGuard } from '@nestjs/passport'
-import { CurrentUser } from '@/infra/auth/current-user-decorator'
-import { UserPayload } from '@/infra/auth/jwt.strategy'
-import { ZodValidationPipe } from '@/infra/http/pipes/zod-validation-pipe'
-import { PrismaService } from '@/infra/prisma/prisma.service'
+import { CurrentUser } from 'src/infra/auth/current-user-decorator'
+import { UserPayload } from 'src/infra/auth/jwt.strategy'
+import { ZodValidationPipe } from 'src/infra/http/pipes/zod-validation-pipe'
+import { PrismaService } from 'src/infra/prisma/prisma.service'
 import { z } from 'zod'
 
 const createQuestionBodySchema = z.object({

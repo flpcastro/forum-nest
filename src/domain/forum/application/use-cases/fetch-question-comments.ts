@@ -1,6 +1,6 @@
-import { QuestionComment } from '@/domain/forum/enterprise/entities/question-comment'
-import { QuestionCommentsRepository } from '@/domain/forum/application/repositories/question-comments-repository'
-import { Either, right } from '@/core/either'
+import { QuestionComment } from 'src/domain/forum/enterprise/entities/question-comment'
+import { QuestionCommentsRepository } from 'src/domain/forum/application/repositories/question-comments-repository'
+import { Either, right } from 'src/core/either'
 
 interface FetchQuestionCommentsUseCaseRequest {
   questionId: string

@@ -1,8 +1,8 @@
-import { AggregateRoot } from '@/core/entities/aggregate-root'
-import { UniqueEntityID } from '@/core/entities/unique-entity-id'
-import { Optional } from '@/core/types/optional'
-import { AnswerAttachmentList } from '@/domain/forum/enterprise/entities/answer-attachment-list'
-import { AnswerCreatedEvent } from '@/domain/forum/enterprise/events/answer-created-event'
+import { AggregateRoot } from 'src/core/entities/aggregate-root'
+import { UniqueEntityID } from 'src/core/entities/unique-entity-id'
+import { Optional } from 'src/core/types/optional'
+import { AnswerAttachmentList } from 'src/domain/forum/enterprise/entities/answer-attachment-list'
+import { AnswerCreatedEvent } from 'src/domain/forum/enterprise/events/answer-created-event'
 
 export interface AnswerProps {
   authorId: UniqueEntityID
