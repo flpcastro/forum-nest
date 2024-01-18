@@ -4,7 +4,7 @@ import { AuthGuard } from '@nestjs/passport'
 import { CurrentUser } from 'src/infra/auth/current-user-decorator'
 import { UserPayload } from 'src/infra/auth/jwt.strategy'
 import { ZodValidationPipe } from 'src/infra/http/pipes/zod-validation-pipe'
-import { PrismaService } from 'src/infra/prisma/prisma.service'
+import { PrismaService } from '../../database/prisma/prisma.service'
 import { z } from 'zod'
 
 const createQuestionBodySchema = z.object({
