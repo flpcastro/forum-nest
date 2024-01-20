@@ -13,7 +13,7 @@ import { CrytographyModule } from '../cryptography/cryptography.module'
 @Module({
 	imports: [
 		DatabaseModule,
-		CrytographyModule,
+		CrytographyModule
 	],
 	controllers: [
 		CreateAccountController, 
